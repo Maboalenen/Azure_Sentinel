@@ -34,7 +34,7 @@ union SecurityEvent, Event   | where EventID == 4624
 ```bash
 union SecurityEvent, Event, SecurityIncident  | where  EventID == 4625 |order by  TimeGenerated desc  | limit 10
 ````
-successfully or fsiled logon
+successfully or failed logon
  ```bash
  union SecurityEvent, Event | where  EventID == 4624 or EventID == 4625  |project  EventID , Process ,  ProcessName , SubjectAccount
  ```
