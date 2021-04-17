@@ -7,7 +7,9 @@ Sample Query
 
 |QKL_Query|
 | :---|
-> union SecurityEvent, Event, SecurityIncident  | where EventID == 4624    
+```bash
+union SecurityEvent, Event, SecurityIncident  | where EventID == 4624
+ ```    
 > union SecurityEvent, Event, SecurityIncident  | where EventID == 4624  | count  
 > union SecurityEvent, Event, SecurityIncident  | where EventID == 4624  | summarize count() by AccountName, Computer  
 > union SecurityEvent, Event, SecurityIncident  | where EventID == 4624  | summarize arg_max(TimeGenerated, *) by Account. 
