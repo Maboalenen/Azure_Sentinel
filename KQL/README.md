@@ -21,15 +21,21 @@ union SecurityEvent, Event   | where EventID == 4624
  ```bash
  union SecurityEvent, Event | where EventID == 4624  | summarize arg_max(TimeGenerated, *) by Account. 
  ```
+ ```bash
+ union SecurityEvent, Event | where  EventID == 4624 | top  10  by TimeGenerated desc  
+ ```
  failed logon
  ```bash
   union SecurityEvent, Event   | where EventID == 4625
  ```
- successfully or fsiled logon
+ ```bash
+ union SecurityEvent, Event  | where  EventID == 4625 |order by  TimeGenerated desc  | limit 10 
+ ```
+```bash
+union SecurityEvent, Event, SecurityIncident  | where  EventID == 4625 |order by  TimeGenerated desc  | limit 10
+````
+successfully or fsiled logon
  ```bash
  union SecurityEvent, Event | where  EventID == 4624 or EventID == 4625  |project  EventID , Process ,  ProcessName , SubjectAccount
  ```
 
-union SecurityEvent, Event, SecurityIncident  | where  EventID == 4624 |order by  TimeGenerated desc  | limit 10
-
-union SecurityEvent, Event, SecurityIncident  | where  EventID == 4624 | top  10  by TimeGenerated desc   
