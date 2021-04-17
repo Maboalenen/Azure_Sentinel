@@ -22,6 +22,6 @@ Workbooks
 > workbooks to visualize your data within Azure Sentinel, something like. Dashboards,  
 > you can use your built-in workbook, and you can edit or you can create your own.
  
- ![image](https://user-images.githubusercontent.com/49055941/115114947-8a5c0b00-9f9a-11eb-99d0-63df8bdca130.png)
+<img width="716" alt="Screen Shot 2021-04-17 at 4 35 24 PM" src="https://user-images.githubusercontent.com/49055941/115115048-ecb50b80-9f9a-11eb-8840-14b17e305be8.png">
 
 
