@@ -44,7 +44,8 @@ Automation playbooks
 ## Note: 
 For automation playbooks like automatically creating incidents or sending email , you shoud create frist logic app   
 ## Azure Logic Apps
-is a serverless, no-code solution for automating workflows. It integrates with hundreds of other services, making it a powerful solution for security orchestration, automation, and response (SOAR). 
-
+> is a serverless, no-code solution for automating workflows. It integrates with hundreds of other services, making it a powerful solution for security orchestration, automation, and response (SOAR).
+> more details <a href='https://docs.microsoft.com/en-us/azure/sentinel/tutorial-respond-threats-playbook' target='_blank'>Automation playbooks </a>    
+ 
 ![Screen Shot 2021-04-17 at 10 13 44 PM](https://user-images.githubusercontent.com/49055941/115124323-2fdaa300-9fca-11eb-913a-bb5aa1ea7d65.png)
 
