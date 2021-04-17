@@ -13,6 +13,7 @@ Collection
 
 Data Connectors
 -----
-    first need to connect to your security sources.Azure Sentinel comes with a number of connectors for Microsoft solutions
+    > first need to connect to your security sources.Azure Sentinel comes with a number of connectors for Microsoft solutions
+    > Ref data connectors  <a href='https://docs.microsoft.com/en-us/azure/sentinel/connect-data-sources' target='_blank'>data connectors</a>
 
 ![alt text](https://github.com/Maboalenen/Azure_Sentinel/blob/main/connectors.png?raw=true)
