@@ -7,4 +7,4 @@ Abstract
     solution Investigate threats with artificial intelligence, and hunt for suspicious activities
     
     
-![alt text](https://github.com/Maboalenen/Azure_Sentinel/blob/main/Sentinel_overview.png?raw=true)
+![alt text](https://github.com/Maboalenen/Azure_Sentinel/blob/main/sentinel.png?raw=true)
