@@ -8,8 +8,10 @@ Sample KQL (Queries)
 successfully logged on
 ```bash
 union SecurityEvent, Event   | where EventID == 4624
- ```    
-> union SecurityEvent, Event, SecurityIncident  | where EventID == 4624  | count  
+ ``` 
+ ```bash
+ union SecurityEvent, Event   | where EventID == 4624  | count  
+ ```
 > union SecurityEvent, Event, SecurityIncident  | where EventID == 4624  | summarize count() by AccountName, Computer  
 > union SecurityEvent, Event, SecurityIncident  | where EventID == 4624  | summarize arg_max(TimeGenerated, *) by Account. 
 > union SecurityEvent, Event, SecurityIncident  | where  EventID == 4624 |extend mahmoud = Account  
