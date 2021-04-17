@@ -31,12 +31,11 @@ Workbooks
 
 Analytics
 ---
-> Create proactive analytics across your data, notified when something suspicious occurs.   
-> You can enable built-in analytics alerts or built you own    
+> Create proactive analytics across your data, notified when something suspicious occurs.     
+> You can enable built-in analytics alerts or built you own     
+> You can also create custom, scheduled alerts from scratch.     
 
 <img width="1184" alt="Screen Shot 2021-04-17 at 5 01 55 PM" src="https://user-images.githubusercontent.com/49055941/115115724-a1046100-9f9e-11eb-9250-82c6a357a820.png">. 
-
-> You can also create custom, scheduled alerts from scratch.    
 
 
 
