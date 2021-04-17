@@ -5,8 +5,8 @@ Abstract
 --------
  > Microsoft cloud-native security information event management (SIEM) and security orchestration automated response (SOAR)  
  > solution Investigate threats with artificial intelligence, and hunt for suspicious activities.
- > Data stored using log analytics,
- > Query using: KQL Kusto Query Language (KQL)
+ > Data stored using log analytics,  
+ > Query using: KQL Kusto Query Language (KQL). 
  > Ref_Azure_Sentinel overview <a href='https://docs.microsoft.com/en-us/azure/sentinel/overview' target='_blank'>Sentinel</a>   
  <img width="799" alt="Screen Shot 2021-04-17 at 4 51 32 PM" src="https://user-images.githubusercontent.com/49055941/115115439-2c7cf280-9f9d-11eb-9241-7300727e38d8.png">
 
