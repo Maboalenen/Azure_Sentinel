@@ -56,16 +56,14 @@ POST Request with 200 success
 ```bash
 union W3CIISLog  | where csMethod contains "POST" and scStatus==200 |project  TimeGenerated , cIP , csMethod , csUriStem, csUriQuery , scStatus , TimeTaken , csUserAgent  
 ```
-Show the Geolocation and remove the privete IPs with specific fields
+Show the Geolocation and remove the privete IPs with specific fields 
 ```bash
 union W3CIISLog  | extend Country=RemoteIPCountry |where not(ipv4_is_private(cIP)) |project  TimeGenerated,Country ,cIP , sIP , csUriStem,csUserName,csUriQuery,TimeTaken, csUserAgent
 ```
-
-
-
-
-
-
-
-
-
+for last three day
+```bash
+union W3CIISLog 
+  | where TimeGenerated > ago(3d)
+  | where not(ipv4_is_private(cIP))
+  | project TimeGenerated, sSiteName, csMethod, csUriStem, sPort, sIP, cIP, RemoteIPCountry , csUserAgent
+```
