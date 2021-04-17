@@ -7,4 +7,4 @@ Sample Query
 
 |Query|Exp|
 | :---| ---:|
-|"union SecurityEvent, Event, SecurityIncident | where EventID == 4624" |  successfully logged on |
+|[union SecurityEvent, Event, SecurityIncident | where EventID == 4624] |  successfully logged on |
