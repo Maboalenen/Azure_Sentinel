@@ -41,7 +41,10 @@ Analytics
 Automation playbooks 
 ----
 > Ability to respond to incidents automatically, you can automate some of your security operations and make your SOC more productive   
- <p style='color:red'>Note:</p> For automation playbooks like automatically creating incidents or sending email , you shoud create frist logic app   
+```diff
+ Note in red
+ ```
+  For automation playbooks like automatically creating incidents or sending email , you shoud create frist logic app.     
 ## Azure Logic Apps
 > is a serverless, no-code solution for automating workflows. It integrates with hundreds of other services, making it a powerful solution for security orchestration, automation, and response (SOAR).  
 > More details <a href='https://docs.microsoft.com/en-us/azure/sentinel/tutorial-respond-threats-playbook' target='_blank'>Automation playbooks </a>    
