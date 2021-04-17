@@ -6,8 +6,7 @@ Abstract
  > Microsoft cloud-native security information event management (SIEM) and security orchestration automated response (SOAR)  
  > solution Investigate threats with artificial intelligence, and hunt for suspicious activities.  
  > Ref_Azure_Sentinel overview <a href='https://docs.microsoft.com/en-us/azure/sentinel/overview' target='_blank'>Sentinel</a>   
- 
- <img width="544" alt="Screen Shot 2021-04-17 at 4 39 29 PM" src="https://user-images.githubusercontent.com/49055941/115115167-7cf35080-9f9b-11eb-8878-31bcbe8eeec3.png">
+ <img width="799" alt="Screen Shot 2021-04-17 at 4 51 32 PM" src="https://user-images.githubusercontent.com/49055941/115115439-2c7cf280-9f9d-11eb-9241-7300727e38d8.png">
 
     
     
