@@ -12,7 +12,10 @@ union SecurityEvent, Event   | where EventID == 4624
  ```bash
  union SecurityEvent, Event   | where EventID == 4624  | count  
  ```
-> union SecurityEvent, Event, SecurityIncident  | where EventID == 4624  | summarize count() by AccountName, Computer  
+  ```bash
+ union SecurityEvent, Event,  | where EventID == 4624  | summarize count() by AccountName, Computer 
+ ```
+ 
 > union SecurityEvent, Event, SecurityIncident  | where EventID == 4624  | summarize arg_max(TimeGenerated, *) by Account. 
 > union SecurityEvent, Event, SecurityIncident  | where  EventID == 4624 |extend mahmoud = Account  
 > union SecurityEvent, Event, SecurityIncident  | where  EventID == 4624 |extend mahmoud = Account | project Computer , mahmoud      (project means stats count by coumputer)
