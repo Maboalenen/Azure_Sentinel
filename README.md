@@ -10,10 +10,8 @@ Abstract
 
     
     
-Collection
---------
 
-Data Connectors
+Data Connectors (Collection)
 -----
   > first need to connect to your security sources.Azure Sentinel comes with a number of connectors for Microsoft solutions  
   > you can your External solutions via API or External solutions via agent for on prem.  
