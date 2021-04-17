@@ -38,4 +38,34 @@ successfully or failed logon
  ```bash
  union SecurityEvent, Event | where  EventID == 4624 or EventID == 4625  |project  EventID , Process ,  ProcessName , SubjectAccount
  ```
+ IIS_logs 
+ -----
+ http code 200 success with specific fields
+ ```bash
+ union W3CIISLog  | where scStatus==200 |project  TimeGenerated , cIP , csMethod , csUriStem, csUriQuery , scStatus , TimeTaken , csUserAgent  
+```
+http code NOT 200 success with specific fields
+```bash
+ union W3CIISLog  | where scStatus!=200 |project  TimeGenerated , cIP , csMethod , csUriStem, csUriQuery , scStatus , TimeTaken , csUserAgent  
+```
+Only post Request
+```bash 
+union W3CIISLog  | where csMethod contains "POST"  |project  TimeGenerated , cIP , csMethod , csUriStem, csUriQuery , scStatus , TimeTaken , csUserAgent  
+```
+POST Request with 200 success
+```bash
+union W3CIISLog  | where csMethod contains "POST" and scStatus==200 |project  TimeGenerated , cIP , csMethod , csUriStem, csUriQuery , scStatus , TimeTaken , csUserAgent  
+```
+Show the Geolocation and remove the privete IPs with specific fields
+```bash
+union W3CIISLog  | extend Country=RemoteIPCountry |where not(ipv4_is_private(cIP)) |project  TimeGenerated,Country ,cIP , sIP , csUriStem,csUserName,csUriQuery,TimeTaken, csUserAgent
+```
+
+
+
+
+
+
+
+
 
