@@ -3,4 +3,5 @@ Azure-Sentinel
 
 Abstract
 --------
-    Cloud-native security information event management (SIEM) and security orchestration automated response (SOAR) 
+    Microsoft cloud-native security information event management (SIEM) and security orchestration automated response (SOAR) 
+    solution. ... Investigate threats with artificial intelligence, and hunt for suspicious activities
