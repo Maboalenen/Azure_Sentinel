@@ -67,3 +67,4 @@ union W3CIISLog
   | where not(ipv4_is_private(cIP))
   | project TimeGenerated, sSiteName, csMethod, csUriStem, sPort, sIP, cIP, RemoteIPCountry , csUserAgent
 ```
+
