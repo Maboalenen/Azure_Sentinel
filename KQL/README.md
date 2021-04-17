@@ -2,11 +2,9 @@
 - Is a read-only request to process data and return results
 - KQL functions are a quick and simple way to make repetitive actions simpler and quicker. They are one of the many ways that Azure Sentinel. 
 
-Sample Query
+Sample KQL (Queries)
 ----
-
-|QKL_Query|
-| :---|
+---
 successfully logged on
 ```bash
 union SecurityEvent, Event   | where EventID == 4624
