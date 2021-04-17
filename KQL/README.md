@@ -4,6 +4,9 @@
 
 Sample Query
 ----
+
+|Query|Exp|
+|--|--|
 > union SecurityEvent, Event, SecurityIncident  | where EventID == 4624   
 > union SecurityEvent, Event, SecurityIncident  | where EventID == 4624  | count   
 > union SecurityEvent, Event, SecurityIncident  | where EventID == 4624  | summarize count() by AccountName, Computer. 
