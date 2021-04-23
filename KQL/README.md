@@ -68,7 +68,7 @@ union W3CIISLog
   | project TimeGenerated, sSiteName, csMethod, csUriStem, sPort, sIP, cIP, RemoteIPCountry , csUserAgent
 ```
 Powershell search for event_data contains .txt
-```
+```bash
 union Event
   | where Computer contains "my_test_machine"
   | where Source contains "Powershell"
