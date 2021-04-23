@@ -72,7 +72,7 @@ Powershell search for event_data contains .txt
 union Event
   | where Computer contains "my_test_machine"
   | where Source contains "Powershell"
-  | where EventData matches regex '.txt'
+  | where EventData matches regex 'download|.txt|bypass|.dll|-nop'
   | extend EventProduct = 'powershell'
   | extend EventData = split(EventData, '"')
   | extend RenderedDescription = split(EventData, '"')
