@@ -70,15 +70,15 @@ union W3CIISLog
 Powershell search for event_data contains .txt
 ```
 union Event
- | where Computer contains "my_test_machine"
- | where Source contains "Powershell"
- | where EventData matches regex '.txt'
- | extend EventProduct = 'powershell'
- | extend EventData = split(EventData, '"')
- | extend RenderedDescription = split(EventData, '"')
- | extend DataItem_type = EventData[1]
- | extend sourceHealthServiceId = EventData[8]
- | project TimeGenerated,EventProduct , Computer, EventID, Source, RenderedDescription, UserName, ParameterXml, EventData, SourceSystem, sourceHealthServiceId , DataItem_type
+  | where Computer contains "my_test_machine"
+  | where Source contains "Powershell"
+  | where EventData matches regex '.txt'
+  | extend EventProduct = 'powershell'
+  | extend EventData = split(EventData, '"')
+  | extend RenderedDescription = split(EventData, '"')
+  | extend DataItem_type = EventData[1]
+  | extend sourceHealthServiceId = EventData[8]
+  | project TimeGenerated,EventProduct , Computer, EventID, Source, RenderedDescription, UserName, ParameterXml, EventData, SourceSystem, sourceHealthServiceId , DataItem_type
 ```
 
 
