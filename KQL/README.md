@@ -38,6 +38,9 @@ successfully or failed logon
  ```bash
  union SecurityEvent, Event | where  EventID == 4624 or EventID == 4625  |project  EventID , Process ,  ProcessName , SubjectAccount
  ```
+ ```bash
+ union Event ,SecurityEvent | where Computer contains "my-computer-name"  and EventID == 4625  or EventID ==4624| project TimeGenerated, EventID , LogonType , TargetAccount ,Account, IpAddress , Activity
+ ```
  IIS_logs 
  -----
  http code 200 success with specific fields
