@@ -1,5 +1,6 @@
 Azure-Sentinel
 =========
+<img width="166" alt="Screen Shot 2021-09-19 at 8 51 01 PM" src="https://user-images.githubusercontent.com/49055941/133937653-16cb31d4-adbf-4da7-8096-7e77f7b280ca.png">
 
 Abstract
 --------
